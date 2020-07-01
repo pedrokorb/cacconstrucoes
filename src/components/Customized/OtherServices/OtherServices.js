@@ -5,25 +5,25 @@ import OtherServicesCard from "./OtherServicesCard";
 
 const images = [
   {
-    url: './terraplanagem.jpg',
+    url: '../../../../content/assets/terraplanagem.jpg',
     title: 'Terraplanagem',
     width: '25%',
     buttonLink: 'https://www.google.com.br'
   },
   {
-    url: './assentamento.jpg',
+    url: '../../../../content/assets/assentamento.jpg',
     title: 'Assentamento',
     width: '25%',
     buttonLink: 'https://www.google.com.br'
   },
   {
-    url: './construção.jpg',
+    url: '../../../../content/assets/construção.jpg',
     title: 'Construção',
     width: '25%',
     buttonLink: 'https://www.google.com.br'
   },
   {
-    url: './projeto.jpg',
+    url: '../../../../content/assets/projeto.jpg',
     title: 'Projeto',
     width: '25%',
     buttonLink: 'https://www.google.com.br'

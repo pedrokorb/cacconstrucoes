@@ -62,7 +62,7 @@ export default function BannerCarousel(props) {
       buttonLink: "https://www.google.com.br",
       buttonColor: '#FFF', 
       buttonTextColor: '#2D2A7E',
-      image: './casa.jpg' 
+      image: '../../../../content/assets/casa.jpg' 
     },
     // { 
     //   title: "Cavalo",
