@@ -1,14 +1,23 @@
 import React from "react"
-import { Link } from "gatsby"
-import styled from "styled-components"
+
+import { Link } from "gatsby";
+import styled from "styled-components";
+import NavBar from "./Customized/NavBar";
+import Footer from "./Customized/Footer";
+import Contact from "./Customized/Contact";
 
 import { rhythm, scale } from "../utils/typography"
+
+import "./layout.css"
 
 class Layout extends React.Component {
   render() {
     const { location, title, children } = this.props
     const rootPath = `${__PATH_PREFIX__}/`
     const blogPath = `${__PATH_PREFIX__}/blog/`
+    const phone = '5555996737066'
+    const target = 'fazer meu site personalizado'
+    const message = `Olá, vi seu anúncio no site ${title} e gostaria de mais informações sobre ${target}.`
     let header
 
     if (location.pathname === rootPath || location.pathname === blogPath) {
@@ -59,18 +68,17 @@ class Layout extends React.Component {
           style={{
             marginLeft: `auto`,
             marginRight: `auto`,
-            maxWidth: rhythm(24),
-            padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
           }}
         >
-          <header>{header}</header>
+          <NavBar />
           <main>{children}</main>
         </div>
-        <Footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </Footer>
+
+        <Contact />
+        
+        <Footer
+          logoLink={`https://api.whatsapp.com/send?phone=${phone}&text=${message}`}
+        />
       </Wrapper>
     )
   }
@@ -79,10 +87,4 @@ class Layout extends React.Component {
 const Wrapper = styled.div`
   min-height: 100vh;
 `
-
-const Footer = styled.footer`
-  text-align: center;
-  margin: 24px;
-`
-
 export default Layout
