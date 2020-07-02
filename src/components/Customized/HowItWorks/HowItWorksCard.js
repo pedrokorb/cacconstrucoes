@@ -15,6 +15,7 @@ export default function HowItWorksCard(props) {
           overflow: 'initial'
         }
       }>
+
       <img className="mx-auto -mt-6" src={props.icon} alt="Project" width="50px" height="50px" />
       <div className="px-4 pb-8">
         <Typography className="text-white text-center pb-5" gutterBottom variant="h5" component="h2">

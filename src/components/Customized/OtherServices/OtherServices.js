@@ -3,27 +3,33 @@ import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import OtherServicesCard from "./OtherServicesCard";
 
+import Terraplanagem from '../../../../content/assets/terraplanagem.jpg';
+import Assentamento from '../../../../content/assets/assentamento.jpg';
+import Construção from '../../../../content/assets/construção.jpg';
+import Projeto from '../../../../content/assets/projeto.jpg';
+
+
 const images = [
   {
-    url: '../../../../content/assets/terraplanagem.jpg',
+    url: Terraplanagem,
     title: 'Terraplanagem',
     width: '25%',
     buttonLink: 'https://www.google.com.br'
   },
   {
-    url: '../../../../content/assets/assentamento.jpg',
+    url: Assentamento,
     title: 'Assentamento',
     width: '25%',
     buttonLink: 'https://www.google.com.br'
   },
   {
-    url: '../../../../content/assets/construção.jpg',
+    url: Construção,
     title: 'Construção',
     width: '25%',
     buttonLink: 'https://www.google.com.br'
   },
   {
-    url: '../../../../content/assets/projeto.jpg',
+    url: Projeto,
     title: 'Projeto',
     width: '25%',
     buttonLink: 'https://www.google.com.br'
