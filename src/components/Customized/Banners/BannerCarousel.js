@@ -5,8 +5,9 @@ import Banner from "./Banner";
 import NavigateBeforeIcon from '@material-ui/icons/NavigateBefore';
 import NavigateNextIcon from '@material-ui/icons/NavigateNext';
 
-import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
+import Casa from "../../../../content/assets/casa.jpg";
 
 function NextArrow(props) {
   const { className, style, onClick } = props;
@@ -62,7 +63,7 @@ export default function BannerCarousel(props) {
       buttonLink: "https://www.google.com.br",
       buttonColor: '#FFF', 
       buttonTextColor: '#2D2A7E',
-      image: './images/casa.jpg' 
+      image: Casa 
     },
     // { 
     //   title: "Cavalo",
