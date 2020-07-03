@@ -1,25 +1,30 @@
 import React from 'react';
 
 import Typography from '@material-ui/core/Typography';
+import { stringToSlug } from '../../utils/utils';
 
 export default function Contact(props) {
 
   return (
-    <div className="py-5 px-10" style={{ backgroundColor: '#2D2A7E' }}>
+    <div 
+      className="py-5 px-10" 
+      style={{ backgroundColor: props.backgroundColor, color: props.textColor }}
+      id={stringToSlug("Contato")}
+    >
       <div className="text-center mb-4 px-5">
-        <Typography className="text-white" variant="h3" gutterBottom>
+        <Typography variant="h3" gutterBottom>
           Contato
         </Typography>
       </div>
       <div className="flex flex-col md:flex-row">
         <div className="flex-1 p-10 text-center md:text-right self-center">
-          <Typography className="text-white p-4" variant="body2" component="p">
+          <Typography className="p-4" variant="body2" component="p">
             Telefone: 981662965
           </Typography>
-          <Typography className="text-white p-4" variant="body2" component="p">
+          <Typography className="p-4" variant="body2" component="p">
             Whatsapp: 999529914
           </Typography>
-          <Typography className="text-white p-4" variant="body2" component="p">
+          <Typography className="p-4" variant="body2" component="p">
             Rua Marcelo Gama, 3490 - Cachoeira do Sul - RS
           </Typography>
         </div>

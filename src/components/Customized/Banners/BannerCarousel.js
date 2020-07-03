@@ -9,6 +9,10 @@ import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import Casa from "../../../../content/assets/casa.jpg";
 
+const phone = '5551999529914'
+const target = 'Construir minha casa'
+const message = `Olá, vi seu anúncio no site e gostaria de mais informações sobre ${target}.`
+
 function NextArrow(props) {
   const { className, style, onClick } = props;
   return (
@@ -60,31 +64,11 @@ export default function BannerCarousel(props) {
       subtitle: "Conheça o projeto da sua nova casa e solicite um orçamento!",
       buttonRounded: true,
       buttonText: "Chamar no WhatsApp",
-      buttonLink: "https://www.google.com.br",
+      buttonLink: `https://api.whatsapp.com/send?phone=${phone}&text=${message}`,
       buttonColor: '#FFF', 
-      buttonTextColor: '#2D2A7E',
+      buttonTextColor: '#021b3d',
       image: Casa 
-    },
-    // { 
-    //   title: "Cavalo",
-    //   subtitle: "Este lindo cavalo vai fazer você comprar",
-    //   buttonRounded: false,
-    //   buttonText: "Chamar no Zap",
-    //   buttonLink: "https://www.google.com.br",
-    //   buttonColor: '#FFF',
-    //   buttonTextColor: '#000',
-    //   image: './horse.png' 
-    // },
-    // { 
-    //   title: "Gato Brabo",
-    //   subtitle: "Este lindo gato vai fazer você comprar",
-    //   buttonRounded: true,
-    //   buttonText: "Chamar no Zap",
-    //   buttonLink: "https://www.google.com.br",
-    //   buttonColor: '#00F',
-    //   buttonTextColor: '#FFF',
-    //   image: './cat.jpg' 
-    // }
+    }
   ];
 
   let settings = {

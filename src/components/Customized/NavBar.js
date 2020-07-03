@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { stringToSlug } from "../../utils/utils";
 
 import PropTypes from 'prop-types';
 
@@ -13,10 +14,15 @@ import Button from '@material-ui/core/Button';
 import Slide from '@material-ui/core/Slide';
 import Menu from '@material-ui/core/Menu';
 
-import MailIcon from '@material-ui/icons/Mail';
 import MenuIcon from '@material-ui/icons/Menu';
 
-import Logo from './../../../content/assets/logobranco.png';
+import Logo from './../../../content/assets/logoclaro.png';
+
+const menus = [
+  'Como Funciona',
+  'Outros Serviços',
+  'Contato'
+]
 
 function HideOnScroll(props) {
   const { children } = props;
@@ -36,7 +42,6 @@ HideOnScroll.propTypes = {
 
 export default function NavBar(props) {
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = useState(null);
-  const icon = './../images/delfuego.png';
 
   const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
 
@@ -59,26 +64,18 @@ export default function NavBar(props) {
       open={isMobileMenuOpen}
       onClose={handleMobileMenuClose}
     >
-      <MenuItem>
-        <Button
-          style={{ color: '#2D2A7E' }}
-          // style={{ color: 'transparent' }}
-          className="m-5"
-          startIcon={<MailIcon>E-mail</MailIcon>}
-        >
-          E-mail
-        </Button>
-      </MenuItem>
-      <MenuItem>
-        <Button
-          style={{ color: '#2D2A7E' }}
-          // style={{ color: 'transparent' }}
-          className="m-5"
-          startIcon={<MailIcon>E-mail</MailIcon>}
-        >
-          E-mail
-        </Button>
-      </MenuItem>
+      { menus.map(menu => (
+        <MenuItem>
+          <Button
+            style={{ color: props.backgroundColor }}
+            href={`/#${stringToSlug(menu)}`}
+            className="m-5"
+            // startIcon={<MailIcon>E-mail</MailIcon>}
+          >
+            {menu}
+          </Button>
+        </MenuItem>
+      ))}
     </Menu>
   );
 
@@ -86,27 +83,23 @@ export default function NavBar(props) {
     <React.Fragment>
       <CssBaseline />
       <HideOnScroll {...props}>
-        <AppBar style={{ backgroundColor: '#2D2A7E' }}>
+        <AppBar style={{ backgroundColor: props.backgroundColor }}>
           {/* style={{ color: 'transparent' }} */}
           <Toolbar className="flex justify-between">
             {/* Se quiser adicionar um logo na navbar */}
-            <img className="w-26 h-16 m-2" src={Logo} alt="logo" />
+            <a href="/">
+              <img className="w-26 h-16 m-2" src={Logo} alt="logo" />
+            </a>
             {/* <Typography variant="h6">{'<PedroKorb />'}</Typography> */}
             <div className="hidden md:flex justify-end">
-              <Button
-                style={{ color: '#FFF' }}
-                className="m-5"
-                startIcon={<MailIcon>E-mail</MailIcon>}
-              >
-                E-mail
-              </Button>
-              <Button
-                style={{ color: '#FFF' }}
-                className="m-5"
-                startIcon={<MailIcon>E-mail</MailIcon>}
-              >
-                E-mail
-              </Button>
+              {menus.map(menu => (
+                <Button
+                  style={{ color: props.textColor, marginRight: '8px' }}
+                  href={`/#${stringToSlug(menu)}`}
+                >
+                  {menu}
+                </Button>
+              ))}
             </div>
             <div className="flex md:hidden justify-end">
               <IconButton

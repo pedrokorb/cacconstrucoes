@@ -1,4 +1,5 @@
 import React from "react"
+import { stringToSlug } from "../utils/utils"
 
 import { Link } from "gatsby";
 import styled from "styled-components";
@@ -70,13 +71,22 @@ class Layout extends React.Component {
             marginRight: `auto`,
           }}
         >
-          <NavBar />
+          <NavBar 
+            backgroundColor='#021b3d'
+            textColor='#FFF'
+          />
           <main>{children}</main>
         </div>
 
-        <Contact />
+        <Contact 
+          id={stringToSlug("Contato")}
+          backgroundColor='#021b3d'
+          textColor='#FFF'
+        />
         
         <Footer
+          backgroundColor='#021b3d'
+          textColor='#FFF'
           logoLink={`https://api.whatsapp.com/send?phone=${phone}&text=${message}`}
         />
       </Wrapper>

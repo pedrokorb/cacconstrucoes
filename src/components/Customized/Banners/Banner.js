@@ -43,6 +43,8 @@ export default function HowItWorks(props) {
           }
           variant="contained" 
           href={props.buttonLink}
+          target="_blank"
+          rel="noreferrer"
         >
           {props.buttonText}
         </Button>

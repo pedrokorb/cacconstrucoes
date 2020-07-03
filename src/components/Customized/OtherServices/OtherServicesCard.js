@@ -86,6 +86,8 @@ export default function OtherServicesCard(props) {
       focusRipple
       className={classes.image}
       href={props.buttonLink}
+      target="_blank"
+      rel="noreferrer"
       focusVisibleClassName={classes.focusVisible}
       style={{
         width: props.imageWidth,

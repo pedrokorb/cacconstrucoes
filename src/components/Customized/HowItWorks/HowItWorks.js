@@ -35,10 +35,10 @@ export default function HowItWorks(props) {
   return (
     <>
       <div className="text-center mb-16 px-5">
-        <Typography style={{ color: '#2D2A7E' }} variant="h3" gutterBottom>
+        <Typography style={{ color: props.textColor }} variant="h3" gutterBottom>
           {props.title}
         </Typography>
-        <Typography style={{ color: '#2D2A7E' }} variant="h5" gutterBottom>
+        <Typography style={{ color: props.textColor }} variant="h5" gutterBottom>
           {props.subtitle}
         </Typography>
       </div>
@@ -50,6 +50,8 @@ export default function HowItWorks(props) {
           title={item.title}
           content={item.content}
           icon={item.icon}
+          textColor="#FFF"
+          backgroundColor="#021b3d"
         />
       ))}
       </div>
