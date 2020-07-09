@@ -32,7 +32,7 @@ class IndexPage extends React.Component {
         </div>
 
 
-        <div className="py-10" id={stringToSlug("Como Funciona")}>
+        <div className="py-10 container" id={stringToSlug("Como Funciona")}>
           <HowItWorks
             title="Como Funciona"
             subtitle="Conheça os processos até você ter sua casa nova"
