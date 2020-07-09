@@ -88,7 +88,7 @@ export default function NavBar(props) {
           <Toolbar className="flex justify-between">
             {/* Se quiser adicionar um logo na navbar */}
             <a href="/">
-              <img className="w-26 h-16 m-2" src={Logo} alt="logo" />
+              <img className="m-4" src={Logo} alt="logo" />
             </a>
             {/* <Typography variant="h6">{'<PedroKorb />'}</Typography> */}
             <div className="hidden md:flex justify-end">

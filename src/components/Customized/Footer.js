@@ -9,7 +9,7 @@ export default function Footer(props) {
       <div className="flex border-t border-white mx-10 justify-center items-center">
         © {new Date().getFullYear()}, desenvolvido por
         <a href={props.logoLink} target="_blank" rel="noreferrer">
-          <img className="w-26 h-16 m-2" src={Logo} alt="logo" />
+          <img className="m-2" src={Logo} alt="logo" />
         </a>
       </div>
     </div>
