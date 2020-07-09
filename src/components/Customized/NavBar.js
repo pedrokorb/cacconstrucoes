@@ -80,7 +80,7 @@ export default function NavBar(props) {
   );
 
   return (
-    <React.Fragment>
+    <div className="container">
       <CssBaseline />
       <HideOnScroll {...props}>
         <AppBar style={{ backgroundColor: props.backgroundColor }}>
@@ -118,6 +118,6 @@ export default function NavBar(props) {
 
       {renderMobileMenu}
 
-    </React.Fragment>
+    </div>
   );
 }
