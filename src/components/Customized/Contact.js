@@ -6,10 +6,9 @@ import { stringToSlug } from '../../utils/utils';
 export default function Contact(props) {
 
   return (
-    <div className="container">
+    <div style={{ backgroundColor: props.backgroundColor, color: props.textColor }}>
       <div 
-        className="py-5 px-10" 
-        style={{ backgroundColor: props.backgroundColor, color: props.textColor }}
+        className="py-5 px-10 container" 
         id={stringToSlug("Contato")}
       >
         <div className="text-center mb-4 px-5">

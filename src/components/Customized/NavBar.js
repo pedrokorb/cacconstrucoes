@@ -80,12 +80,12 @@ export default function NavBar(props) {
   );
 
   return (
-    <div className="container">
+    <>
       <CssBaseline />
       <HideOnScroll {...props}>
         <AppBar style={{ backgroundColor: props.backgroundColor }}>
           {/* style={{ color: 'transparent' }} */}
-          <Toolbar className="flex justify-between">
+          <Toolbar className="flex justify-between container">
             {/* Se quiser adicionar um logo na navbar */}
             <a href="/">
               <img className="m-4" src={Logo} alt="logo" />
@@ -118,6 +118,6 @@ export default function NavBar(props) {
 
       {renderMobileMenu}
 
-    </div>
+    </>
   );
 }
