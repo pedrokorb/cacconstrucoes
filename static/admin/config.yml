@@ -14,48 +14,6 @@ collections:
   #   fields:
   #     - {label: path, name: path, widget: hidden, default: "index"}
   #     - {label: "Título", name: title, widget: string}
-      
-  #     - label: "Sessão Como Funciona"
-  #       name: feature
-  #       widget: "object"
-  #       fields:
-  #         - {label: "Título", name: title, widget: string}
-  #         - {label: "Subtítulo", name: subtitle, widget: string}
-      
-  #     - label: "Sessão Outros Serviços"
-  #       name: service
-  #       widget: "object"
-  #       fields:
-  #         - {label: "Título", name: title, widget: string}
-  #         - {label: "Subtítulo", name: subtitle, widget: string}
-      
-  #     - label: "Contato"
-  #       name: contact
-  #       widget: "object"
-  #       fields:
-  #         - {label: "Título", name: title, widget: string}
-  #         - {label: "Subtítulo", name: subtitle, widget: text, required: false}
-
-  #     - label: "SEO"
-  #       name: seo
-  #       widget: "object"
-  #       fields:
-  #         - {label: "Título", name: title, widget: string}
-  #         - {label: "Descrição", name: description, widget: string}
-
-  #     - label: "OpenGraph"
-  #       name: opengraph
-  #       widget: "object"
-  #       fields:
-  #         - {label: "Título", name: title, widget: string}
-  #         - {label: "Descrição", name: description, widget: string}
-
-  #         - label: "Imagem"
-  #           name: image
-  #           widget: "object"
-  #           fields:
-  #             - {label: "Imagem", name: imageUrl, widget: image}
-  #             - {label: "Descrição da Imagem", name: imageAlt, widget: string}
 
   - name: "page"
     label: "Página Inicial"
@@ -65,8 +23,48 @@ collections:
         name: "index"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
-          - {label: Title, name: title, widget: string}
-          - {label: SubTitle, name: subtitle, widget: string}
+          
+          - label: "Sessão Como Funciona"
+            name: feature
+            widget: "object"
+            fields:
+              - {label: "Título", name: title, widget: string}
+              - {label: "Subtítulo", name: subtitle, widget: string}
+          
+          - label: "Sessão Outros Serviços"
+            name: service
+            widget: "object"
+            fields:
+              - {label: "Título", name: title, widget: string}
+              - {label: "Subtítulo", name: subtitle, widget: string}
+          
+          - label: "Contato"
+            name: contact
+            widget: "object"
+            fields:
+              - {label: "Título", name: title, widget: string}
+              - {label: "Subtítulo", name: subtitle, widget: text, required: false}
+
+          - label: "SEO"
+            name: seo
+            widget: "object"
+            fields:
+              - {label: "Título", name: title, widget: string}
+              - {label: "Descrição", name: description, widget: string}
+
+          - label: "OpenGraph"
+            name: opengraph
+            widget: "object"
+            fields:
+              - {label: "Título", name: title, widget: string}
+              - {label: "Descrição", name: description, widget: string}
+
+              - label: "Imagem"
+                name: image
+                widget: "object"
+                fields:
+                  - {label: "Imagem", name: imageUrl, widget: image}
+                  - {label: "Descrição da Imagem", name: imageAlt, widget: string}
           
   - name: blog
     label: Blog
