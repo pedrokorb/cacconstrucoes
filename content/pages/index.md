@@ -1,25 +1,22 @@
 ---
 path: index
 feature:
-  subtitle: Conheça os procedimentos clínicos e cirúrgicos realizados pela Dra. Luiza
-  title: Procedimentos
+  subtitle: Conheça os processos até você ter sua casa nova
+  title: Como Funciona
 service:
-  subtitle: Conheça os procedimentos clínicos e cirúrgicos realizados pela Dra. Luiza
-  title: Procedimentos
+  subtitle: Conheça outros serviços que oferecemos
+  title: Outros Serviços
 contact:
-  subtitle: Entre em contato e agende uma avaliação!
+  subtitle: Entre em contato e faça um orçamento!
   title: Contato
 seo:
-  description: >-
-    Fique por dentro do universo da cirurgia plástica! Conheça o trabalho da
-    Dra. Luiza Cirolini, especialista pelo Instituto Ivo Pitanguy.
-  title: Dra. Luiza Cirolini
+  description: Tire o sonho da sua casa própria do papel. Faça um orçamento!
+  title: C.A.C. Construções
 opengraph:
-  description: >-
-    Fique por dentro do universo da cirurgia plástica! Conheça o trabalho da
-    Dra. Luiza Cirolini, especialista pelo Instituto Ivo Pitanguy.
+  description: Tire o sonho da sua casa própria do papel. Faça um orçamento!
   image:
-    imageAlt: Cirurgia Plastica Dra Luiza Cirolini
-    imageUrl: /assets/banner-1.jpg
-  title: Dra. Luiza Cirolini
+    imageAlt: CAC Construções
+    imageUrl: /../assets/casa.jpg
+  title: C.A.C. Construções
 ---
+
