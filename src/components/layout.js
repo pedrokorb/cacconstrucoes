@@ -16,9 +16,6 @@ class Layout extends React.Component {
     const { location, title, children } = this.props
     const rootPath = `${__PATH_PREFIX__}/`
     const blogPath = `${__PATH_PREFIX__}/blog/`
-    const phone = '5555996737066'
-    const target = 'fazer meu site personalizado'
-    const message = `Olá, vi seu anúncio no site ${title} e gostaria de mais informações sobre ${target}.`
     let header
 
     if (location.pathname === rootPath || location.pathname === blogPath) {
@@ -87,7 +84,7 @@ class Layout extends React.Component {
         <Footer
           backgroundColor='#021b3d'
           textColor='#FFF'
-          logoLink={`https://api.whatsapp.com/send?phone=${phone}&text=${message}`}
+          logoLink={`https://pedrokorb.com/`}
         />
       </Wrapper>
     )
