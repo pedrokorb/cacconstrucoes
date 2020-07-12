@@ -20,6 +20,6 @@ opengraph:
     Dra. Luiza Cirolini, especialista pelo Instituto Ivo Pitanguy.
   image:
     imageAlt: Cirurgia Plastica Dra Luiza Cirolini
-    imageUrl: /uploads/banner-1.jpg
+    imageUrl: /assets/banner-1.jpg
   title: Dra. Luiza Cirolini
 ---
