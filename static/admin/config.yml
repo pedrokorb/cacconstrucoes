@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: pedrokorb/Site---CAC-constru-es/
+  repo: pedrokorb/cacconstrucoes/
 
 media_folder: content/assets
 public_folder: ../assets
