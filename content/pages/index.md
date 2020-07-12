@@ -1,12 +1,12 @@
 ---
 templateKey: index-page
-feature:
+processSession:
   subtitle: Conheça os processos até você ter sua casa nova
   title: Como Funciona
-service:
+serviceSession:
   subtitle: Conheça outros serviços que oferecemos
   title: Outros Serviços
-contact:
+contactSession:
   subtitle: Entre em contato e faça um orçamento!
   title: Contato
 seo:

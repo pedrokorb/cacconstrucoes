@@ -25,21 +25,21 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
           
           - label: "Sessão Como Funciona"
-            name: feature
+            name: processSession
             widget: "object"
             fields:
               - {label: "Título", name: title, widget: string}
               - {label: "Subtítulo", name: subtitle, widget: string}
           
           - label: "Sessão Outros Serviços"
-            name: service
+            name: serviceSession
             widget: "object"
             fields:
               - {label: "Título", name: title, widget: string}
               - {label: "Subtítulo", name: subtitle, widget: string}
           
           - label: "Contato"
-            name: contact
+            name: contactSession
             widget: "object"
             fields:
               - {label: "Título", name: title, widget: string}
@@ -76,3 +76,30 @@ collections:
       - { name: title, label: Title }
       - { name: description, label: Description }
       - { name: body, label: Body, widget: markdown }
+
+  #Collection Headers
+  - label: "Headers"
+    name: "headers"
+    folder: "content/headers"
+    create: true
+    identifier_field: title
+    editor:
+      preview: false
+    fields:
+      - {label: "ID", name: id, widget: id}
+      - {label: "Título", name: title, widget: string}
+      - {label: "Descrição", name: description, widget: string, required: false}
+      - label: "Button"
+        name: "button"
+        widget: "object"
+        fields:
+          - { label: "Texto",   name: text,    widget: string, default: " ", required: false }
+          - { label: "Link",    name: link,    widget: string, default: " ", required: false }
+          - { label: "Visível", name: visible, widget: boolean, default: false               }
+
+      - label: "Imagem de Fundo"
+        name: background
+        widget: object
+        fields:
+          - {label: "Imagem", name: imageUrl, widget: image}
+          - {label: "Descrição da Imagem", name: imageAlt, widget: string}
