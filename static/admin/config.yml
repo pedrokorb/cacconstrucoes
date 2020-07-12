@@ -57,6 +57,17 @@ collections:
               - {label: "Imagem", name: imageUrl, widget: image}
               - {label: "Descrição da Imagem", name: imageAlt, widget: string}
 
+  - name: "teste"
+    label: "Teste"
+    files:
+      - file: content/pages/teste.md
+        label: "Landing Page"
+        name: "teste"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
+          - {label: Title, name: title, widget: string}
+          - {label: SubTitle, name: subtitle, widget: string}
+          
   - name: blog
     label: Blog
     folder: content/blog
