@@ -13,6 +13,7 @@ collections:
     create: true
     fields:
       - {label: path, name: path, widget: hidden, default: "index"}
+      - {label: "Título", name: title, widget: string}
       
       - label: "Sessão Como Funciona"
         name: feature
