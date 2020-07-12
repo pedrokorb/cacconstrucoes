@@ -9,8 +9,7 @@ collections:
 #Collections for Pages
   - label: "Páginas"
     name: "pages"
-    editor:
-      preview: false
+    create: true
     files:
       - label: "Página Inicial"
         name: "index"
