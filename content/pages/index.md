@@ -1,5 +1,6 @@
 ---
 path: index
+title: Página Inicial
 feature:
   subtitle: Conheça os processos até você ter sua casa nova
   title: Como Funciona
