@@ -86,7 +86,7 @@ collections:
     editor:
       preview: false
     fields:
-      - {label: "ID", name: id, widget: id}
+      # - {label: "ID", name: id, widget: id}
       - {label: "Título", name: title, widget: string}
       - {label: "Descrição", name: description, widget: string, required: false}
       - label: "Button"
