@@ -5777,7 +5777,7 @@ create-hmac@^1.1.0, create-hmac@^1.1.2, create-hmac@^1.1.4:
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
 
-create-react-class@^15.5.1, create-react-class@^15.5.2:
+create-react-class@^15.5.1, create-react-class@^15.5.2, create-react-class@^15.6.3:
   version "15.6.3"
   resolved "https://registry.yarnpkg.com/create-react-class/-/create-react-class-15.6.3.tgz#2d73237fb3f970ae6ebe011a9e66f46dbca80036"
   integrity sha512-M+/3Q6E6DLO6Yx3OwrWjwHBnvfXXYA7W+dFjt/ZDBemHO1DDZhsalX/NUtnTYclN6GfnBDRh4qRHjcDHmlJBJg==
@@ -12283,6 +12283,11 @@ netlify-cms-widget-boolean@^2.2.3:
   resolved "https://registry.yarnpkg.com/netlify-cms-widget-boolean/-/netlify-cms-widget-boolean-2.2.3.tgz#7b64476a31b26e4e196dbc9097e9b503aff6f3f3"
   integrity sha512-q9YkeciUDF11TCzyebd/ipyTXe9lzsbO+zj0PRfyEMHpKsN/w2z9tMui+Fb0NoytGoF+EYw+nkKdnIL2spL3QA==
 
+netlify-cms-widget-color@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/netlify-cms-widget-color/-/netlify-cms-widget-color-3.0.1.tgz#dc3e1b4cf57ad8b87bc719ec104895fc1a9aa14c"
+  integrity sha512-XXxfYhsykiblNBxBEWP1KZ8eF60yUGVGzJoNIVYhtjSGTRq9YpVuqfbwc7aK0q/fJZJvCp+EcdMwHLIwda1wlA==
+
 netlify-cms-widget-date@^2.3.3:
   version "2.3.4"
   resolved "https://registry.yarnpkg.com/netlify-cms-widget-date/-/netlify-cms-widget-date-2.3.4.tgz#fdd98eb0568fe70dd3bbbc607a76718d351d9871"
@@ -12368,6 +12373,15 @@ netlify-cms-widget-select@^2.4.3:
   integrity sha512-wcJJRwPk4lrd/5RSP0n2hg3FNQZMcqu8AmTe7IsYB909m/2uR/dPOHwc7ZN+vwSEyncuFjlu/erNkP1pvS5GgA==
   dependencies:
     react-select "^2.4.2"
+
+netlify-cms-widget-simple-uuid@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/netlify-cms-widget-simple-uuid/-/netlify-cms-widget-simple-uuid-0.0.2.tgz#a3f7db75df89514ce2c4a59da407df05b6e69d17"
+  integrity sha512-wHfFEK5HTmKIETuqSQPyWr5RbRJov5LffDkI/lyRAwflyLTvsppkYLz32YGDTl6KBzI+U7h/9ILtWBChR0cQEA==
+  dependencies:
+    create-react-class "^15.6.3"
+    react "^16.11.0"
+    uuid "^3.3.3"
 
 netlify-cms-widget-string@^2.2.3:
   version "2.2.3"
@@ -14862,7 +14876,7 @@ react-waypoint@^8.1.0:
     prop-types "^15.0.0"
     react-is "^16.6.3"
 
-react@^16.8.0:
+react@^16.11.0, react@^16.8.0:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react/-/react-16.13.1.tgz#2e818822f1a9743122c063d6410d85c1e3afe48e"
   integrity sha512-YMZQQq32xHLX0bz5Mnibv1/LHb3Sqzngu7xstSM+vrkE5Kzr9xE0yMByK5kMoTK30YVJE61WfbxIFFvfeDKT1w==
