@@ -77,7 +77,19 @@ function SEO({ description, lang, meta, keywords, title }) {
             : []
         )
         .concat(meta)}
-    />
+    >
+      {/* GOOGLE ANALYTICS SCRIPT */}
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172648132-1"></script>
+      <script>
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-172648132-1');
+        `}
+      </script>
+    </Helmet>
   )
 }
 
